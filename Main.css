@@ -14,19 +14,22 @@ html {
   height: auto;
   width: 10%;
 }
+.Bild{
+  width:100%
+}
+
 
 body {
   background-color:  #FFF ;
 
 }
 
-footer{
-  background-color:#b15b11;
-  position: relative;
-  float:bottom;
-  padding:100px;
-  margin-top:40%;
+
+.space{
+  width: 100vw;
+  height:20vh;
 }
+
 
 .MittText{
 text-align: left;
@@ -63,7 +66,7 @@ p{
   text-align: center;
   padding: 25px 16px;
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .topnav a:hover {
@@ -90,7 +93,15 @@ p{
   padding: 15px;
   border: 1px solid red;
 }
-  
+  .col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+
 
 
 /* Mobil anpassning med columner*/
@@ -103,13 +114,7 @@ p{
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+
 
 
 
@@ -138,25 +143,59 @@ p{
     display: block;
     text-align: left;
   }
+
+   
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  [class*="col-"] {
+    width: 50%;
+  }
    
 }
+
 
 @media only screen and (min-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
-    width: 50%;
+    width: 25%;
+  } 
+
+    h1{
+      font-size: 4vw;
+
+    }
+    
+    
+    .topnav a{
+      font-size: 2vw;
+
+    }
+    
+  
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  p{
+    font-size: 2vw;
   }
   
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  [class*="col-"] {
-    width: 33%;
+  
+  
+  .topnav a {
+    float: center;
   }
+  
+  
+  
+}
+@media only screen and (max-width: 992px) {
+  
+  
   
   
 }
